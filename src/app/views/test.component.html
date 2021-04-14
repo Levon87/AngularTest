@@ -1,0 +1,107 @@
+  <mat-toolbar color="primary">
+    <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+      <mat-icon>menu</mat-icon>
+    </button>
+    <span>SUpl.biz</span>
+
+<button type=submit [routerLink]="['']" mat-flat-button color="primary">Начать Работать</button>
+<button type=submit [routerLink]="['']" mat-flat-button color="primary">Заказы</button>
+<button type=submit   [routerLink]="['']"mat-flat-button color="primary">Товары</button>
+<button type=submit [routerLink]="['']" mat-flat-button color="primary">Тарифы для поставшиков</button>
+
+  <a href="/linktopage" mat-flat-button color="light" class="button"><span>Sign In</span></a>
+
+  </mat-toolbar>
+
+<div class="flex-container">
+  <div class="j">
+    <form>
+  <h1>
+    SUpl.biz
+  </h1>
+<h3>
+  Платформа для бизнеса
+</h3>
+<p class="lol">
+  Сайт для оптовых покупателей и продавцов. Помогаем компаниям малого и среднего
+   бизнеса России и СНГ быстро находить лучших поставщиков и новых клиентов, продвигать
+   свою продукцию в интернете.
+  961 891
+заказ от оптовых покупателей
+1 198 574
+оптовых поставщика
+</p>
+<button class="button-row" mat-button color="light">Начать Работать</button>
+</form>
+</div>
+<div class="j">
+  <form>
+  <h1>
+    Продать
+  </h1>
+
+<div>
+  <p class="font-italic">
+    Находите новых клиентов ежедневно на нашей платформе
+  </p>
+</div>
+<div>
+  <mat-form-field appearance="fill" class="size">
+    <mat-label>Что хотите купить</mat-label>
+    <input matInput>
+  </mat-form-field>
+</div>
+<div>
+  <mat-form-field class="size" hintLabel="Max 10 characters" appearance="fill">
+    <mat-label>Телефон</mat-label>
+    <input matInput #input maxlength="10" placeholder="Ex. Nougat">
+    <mat-hint align="end">{{input.value?.length || 0}}/10</mat-hint>
+  </mat-form-field>
+</div>
+<div>
+  <mat-form-field appearance="fill"class="size">
+    <mat-label>E-mail</mat-label>
+    <input matInput placeholder="pat@example.com" [formControl]="email" required>
+    <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>
+  </mat-form-field>
+</div>
+<button class="button-row" (click)="FindProvider()" mat-flat-button color="primary">Найти поставшиков</button>
+</form>
+</div>
+<div class="j">
+  <form>
+  <h1>
+    Купить
+  </h1>
+
+<div>
+  <p class="font-italic">
+     Ускорьте процесс закупки,выбирая из предложения 1.2млн,,,,,
+  </p>
+</div>
+<div>
+  <mat-form-field class="size" appearance="fill">
+    <mat-label>Что хотите купить</mat-label>
+    <input matInput>
+  </mat-form-field>
+</div>
+<div>
+  <mat-form-field class="size" hintLabel="Max 10 characters" appearance="fill">
+  <mat-label>Телефон</mat-label>
+  <input matInput #input maxlength="10" placeholder="Ex. Nougat">
+  <mat-hint align="end">{{input.value?.length || 0}}/10</mat-hint>
+</mat-form-field>
+</div>
+<div>
+  <mat-form-field class="size" appearance="fill">
+    <mat-label>E-mail</mat-label>
+    <input matInput placeholder="pat@example.com" [formControl]="email" required>
+    <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>
+  </mat-form-field>
+</div>
+<div >
+<button class="button-row"(click)="FindClient()" mat-flat-button color="primary">Найти клиентов</button>
+</div>
+</form>
+</div>
+</div>
