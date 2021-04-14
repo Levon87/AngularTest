@@ -15,7 +15,7 @@
   justify-content: center;
   width: 100%;
 }
-.j {
+.formstyle {
   max-width: 600px;
   width: 100%;
   margin: 15px 30px;
@@ -30,13 +30,10 @@
 .size {
   width: 35rem;
 }
-.lol {
+.columnSize {
   width: 400px;
   height: 350px;
 }
 button {
   width: 400px;
-}
-.ggg {
-  height: 50px;
 }
